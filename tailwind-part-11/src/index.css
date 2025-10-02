@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h1{
+        @apply mb-2 text-3xl font-bold;
+    }
+    h2{
+        @apply text-xl font-semibold mb-1;
+    }
+    a{
+        @apply underline text-blue-600 hover:text-purple-500 transition decoration-wavy underline-offset-4;
+    }
+    .btn{
+        @apply px-4 py-2 rounded-lg hover:transition hover:duration-300 hover:opacity-80 disabled:bg-slate-400/30 hover:disabled:opacity-100
+    }
+    .btn-primary{
+        @apply bg-blue-600 hover:bg-blue-500 text-white
+    }
+    .btn-secondary{
+        @apply bg-slate-800 hover:bg-slate-700 text-white
+    }
+    input[type="text"]{
+        @apply outline-none border border-slate-300 rounded-sm px-2 py-1
+    }
+}
