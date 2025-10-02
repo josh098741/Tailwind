@@ -21,7 +21,30 @@
     .btn-secondary{
         @apply bg-slate-800 hover:bg-slate-700 text-white
     }
+    .input,
+    select{
+        @apply p-1 text-slate-500 mb-1 border border-slate-300 rounded outline-none
+    }
+    select{
+        @apply pr-8
+    }
     input[type="text"]{
         @apply outline-none border border-slate-300 rounded-sm px-2 py-1
+    }
+    input[type="checkbox"]{
+        @apply p-2 accent-purple-800 mr-2
+    }
+    label{
+        @apply text-sm text-slate-700 font-medium leading-3
+    }
+    
+    .Select{
+        @apply inline-block cursor-pointer w-32 border border-slate-300 rounded outline-none transition
+    }
+    .Select .child{
+        @apply text-slate-500 px-2 py-1;
+    }
+    .Select ul li{
+        @apply hover:bg-slate-100;
     }
 }
